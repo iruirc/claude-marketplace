@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "iruirc",
+  "version": "1.0.0",
+  "description": "spine-toolkit and the platform plugins that serve it",
+  "owner": { "name": "Dmitry Nuzhin" },
+  "plugins": [
+    {
+      "name": "spine-toolkit",
+      "description": "Task lifecycle orchestrator: stages, artifacts, dispatch, Tasks/, telemetry, i18n",
+      "version": "1.0.0",
+      "author": { "name": "Dmitry Nuzhin" },
+      "source": { "source": "github", "repo": "iruirc/spine-toolkit" },
+      "category": "development",
+      "keywords": ["orchestrator", "workflow", "task-management"]
+    },
+    {
+      "name": "swift-platform",
+      "description": "Swift/Apple knowledge and agents for spine-toolkit",
+      "version": "1.0.0",
+      "author": { "name": "Dmitry Nuzhin" },
+      "source": { "source": "github", "repo": "iruirc/swift-platform" },
+      "category": "development",
+      "keywords": ["swift", "ios", "macos", "spm", "swiftui", "uikit"]
+    }
+  ]
+}
