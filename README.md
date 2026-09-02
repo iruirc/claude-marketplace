@@ -1,5 +1,10 @@
 # iruirc marketplace
 
+[![release](https://img.shields.io/github/v/tag/iruirc/claude-marketplace?sort=semver&label=release&color=0969da)](https://github.com/iruirc/claude-marketplace)
+[![license](https://img.shields.io/github/license/iruirc/claude-marketplace?color=555)](LICENSE)
+[![spine-toolkit](https://img.shields.io/github/v/tag/iruirc/spine-toolkit?sort=semver&label=spine-toolkit&color=0969da)](https://github.com/iruirc/spine-toolkit)
+[![swift-platform](https://img.shields.io/github/v/tag/iruirc/swift-platform?sort=semver&label=swift-platform&color=0969da)](https://github.com/iruirc/swift-platform)
+
 Two Claude Code plugins:
 
 - **[spine-toolkit](https://github.com/iruirc/spine-toolkit)** — a task lifecycle orchestrator that
