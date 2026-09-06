@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "iruirc",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "spine-toolkit and the platform plugins that serve it",
   "owner": { "name": "Dmitry Nuzhin" },
   "plugins": [
     {
       "name": "spine-toolkit",
       "description": "Task lifecycle orchestrator: stages, artifacts, dispatch, Tasks/, telemetry, i18n",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "author": { "name": "Dmitry Nuzhin" },
       "source": { "source": "github", "repo": "iruirc/spine-toolkit" },
       "category": "development",
