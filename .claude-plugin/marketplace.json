@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "iruirc",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "spine-toolkit, the platform plugins that teach it a stack, and the drivers that drive a running app",
   "owner": { "name": "Dmitry Nuzhin" },
   "plugins": [
@@ -26,7 +26,7 @@
     {
       "name": "spine-platform-kotlin",
       "description": "Kotlin knowledge and agents for spine-toolkit — Android, Compose Desktop, JVM servers, KMP",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "author": { "name": "Dmitry Nuzhin" },
       "source": { "source": "github", "repo": "iruirc/spine-platform-kotlin" },
       "category": "development",
