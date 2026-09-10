@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "iruirc",
-  "version": "1.10.0",
-  "description": "spine-toolkit and the platform plugins that serve it",
+  "version": "1.11.0",
+  "description": "spine-toolkit, the platform plugins that teach it a stack, and the drivers that drive a running app",
   "owner": { "name": "Dmitry Nuzhin" },
   "plugins": [
     {
@@ -31,6 +31,24 @@
       "source": { "source": "github", "repo": "iruirc/spine-platform-kotlin" },
       "category": "development",
       "keywords": ["kotlin", "android", "compose", "kmp", "ktor", "spring-boot", "gradle"]
+    },
+    {
+      "name": "spine-driver-mobile",
+      "description": "Driver adapter for spine-toolkit — declares what the mcp-devices MCP server drives, per surface",
+      "version": "1.0.0",
+      "author": { "name": "Dmitry Nuzhin" },
+      "source": { "source": "github", "repo": "iruirc/spine-driver-mobile" },
+      "category": "development",
+      "keywords": ["driver", "mcp", "simulator", "emulator", "ios", "android", "validation"]
+    },
+    {
+      "name": "spine-driver-agent-device",
+      "description": "Driver adapter for spine-toolkit — declares what the callstack/agent-device MCP server drives, per surface",
+      "version": "1.0.0",
+      "author": { "name": "Dmitry Nuzhin" },
+      "source": { "source": "github", "repo": "iruirc/spine-driver-agent-device" },
+      "category": "development",
+      "keywords": ["driver", "mcp", "simulator", "emulator", "ios", "android", "validation"]
     }
   ]
 }
