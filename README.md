@@ -9,7 +9,8 @@
 [![spine-driver-agent-device](https://img.shields.io/github/v/tag/iruirc/spine-driver-agent-device?sort=semver&label=spine-driver-agent-device&color=0969da)](https://github.com/iruirc/spine-driver-agent-device)
 
 Five Claude Code plugins in three categories — the orchestrator, the platforms that teach it a stack,
-and the drivers that let it drive a running app:
+and the drivers that let it drive a running app. The Swift and Kotlin platform plugins also expose
+their standalone knowledge skills to Codex:
 
 - **[spine-toolkit](https://github.com/iruirc/spine-toolkit)** — a task lifecycle orchestrator that
   knows no programming language. Install it alone and you get the process.
@@ -27,13 +28,34 @@ and the drivers that let it drive a running app:
   for `callstack/agent-device`. Pick whichever server you already run; a project names one in its
   `## Validation` block.
 
-```
+## Claude Code
+
+```text
 /plugin marketplace add iruirc/claude-marketplace
 /plugin install spine-platform-swift   # for a Swift project — pulls spine-toolkit with it
 /plugin install spine-platform-kotlin  # for a Kotlin project — pulls spine-toolkit with it
 /plugin install spine-toolkit          # for any other stack, paired with a platform plugin of your own
 /plugin install spine-driver-mobile    # optional — lets Validation drive a simulator or device
 ```
+
+## Codex
+
+Add this repository as a Git-backed marketplace, then install either or both platform plugins:
+
+```bash
+codex plugin marketplace add iruirc/claude-marketplace
+codex plugin add spine-platform-swift@iruirc
+codex plugin add spine-platform-kotlin@iruirc
+```
+
+Refresh the marketplace and its installed plugins with:
+
+```bash
+codex plugin marketplace upgrade iruirc
+```
+
+Start a new Codex session after installation or upgrade. Codex gets the standalone platform skills;
+the `spine-toolkit` orchestration, agents, commands and driver adapters remain Claude Code components.
 
 Writing a platform plugin for another stack is a documented contract:
 [`conventions/platform-contract.md`](https://github.com/iruirc/spine-toolkit/blob/main/conventions/platform-contract.md).
