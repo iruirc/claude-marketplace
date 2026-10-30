@@ -9,8 +9,7 @@
 [![spine-driver-agent-device](https://img.shields.io/github/v/tag/iruirc/spine-driver-agent-device?sort=semver&label=spine-driver-agent-device&color=0969da)](https://github.com/iruirc/spine-driver-agent-device)
 
 Five Claude Code plugins in three categories — the orchestrator, the platforms that teach it a stack,
-and the drivers that let it drive a running app. The Swift and Kotlin platform plugins also expose
-their standalone knowledge skills to Codex:
+and the drivers that let it drive a running app. All five install in Codex CLI too:
 
 - **[spine-toolkit](https://github.com/iruirc/spine-toolkit)** — a task lifecycle orchestrator that
   knows no programming language. Install it alone and you get the process.
@@ -40,12 +39,14 @@ their standalone knowledge skills to Codex:
 
 ## Codex
 
-Add this repository as a Git-backed marketplace, then install either or both platform plugins:
+Add this repository as a Git-backed marketplace, then install the orchestrator, a platform and,
+optionally, a driver:
 
 ```bash
 codex plugin marketplace add iruirc/claude-marketplace
-codex plugin add spine-platform-swift@iruirc
-codex plugin add spine-platform-kotlin@iruirc
+codex plugin add spine-toolkit@iruirc
+codex plugin add spine-platform-swift@iruirc     # or spine-platform-kotlin@iruirc
+codex plugin add spine-driver-mobile@iruirc      # optional
 ```
 
 Refresh the marketplace and its installed plugins with:
@@ -54,8 +55,9 @@ Refresh the marketplace and its installed plugins with:
 codex plugin marketplace upgrade iruirc
 ```
 
-Start a new Codex session after installation or upgrade. Codex gets the standalone platform skills;
-the `spine-toolkit` orchestration, agents, commands and driver adapters remain Claude Code components.
+Start a new Codex session after installation or upgrade, then run `$spine-toolkit:setup` in the
+project — [spine-toolkit's README](https://github.com/iruirc/spine-toolkit#codex-cli) says what it
+sets up and what differs from Claude Code.
 
 Writing a platform plugin for another stack is a documented contract:
 [`conventions/platform-contract.md`](https://github.com/iruirc/spine-toolkit/blob/main/conventions/platform-contract.md).
