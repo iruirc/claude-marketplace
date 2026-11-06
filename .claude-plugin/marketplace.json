@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "iruirc",
+  "name": "spine",
   "version": "2.46.1",
   "description": "spine-toolkit, the platform plugins that teach it a stack, and the drivers that drive a running app",
   "owner": { "name": "Dmitry Nuzhin" },

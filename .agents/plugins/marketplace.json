@@ -1,7 +1,7 @@
 {
-  "name": "iruirc",
+  "name": "spine",
   "interface": {
-    "displayName": "iruirc"
+    "displayName": "Spine"
   },
   "plugins": [
     {

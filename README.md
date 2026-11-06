@@ -1,7 +1,7 @@
-# iruirc marketplace
+# Spine marketplace
 
-[![release](https://img.shields.io/github/v/tag/iruirc/claude-marketplace?sort=semver&label=release&color=0969da)](https://github.com/iruirc/claude-marketplace)
-[![license](https://img.shields.io/github/license/iruirc/claude-marketplace?color=555)](LICENSE)
+[![release](https://img.shields.io/github/v/tag/iruirc/spine-marketplace?sort=semver&label=release&color=0969da)](https://github.com/iruirc/spine-marketplace)
+[![license](https://img.shields.io/github/license/iruirc/spine-marketplace?color=555)](LICENSE)
 [![spine-toolkit](https://img.shields.io/github/v/tag/iruirc/spine-toolkit?sort=semver&label=spine-toolkit&color=0969da)](https://github.com/iruirc/spine-toolkit)
 [![spine-platform-swift](https://img.shields.io/github/v/tag/iruirc/spine-platform-swift?sort=semver&label=spine-platform-swift&color=0969da)](https://github.com/iruirc/spine-platform-swift)
 [![spine-platform-kotlin](https://img.shields.io/github/v/tag/iruirc/spine-platform-kotlin?sort=semver&label=spine-platform-kotlin&color=0969da)](https://github.com/iruirc/spine-platform-kotlin)
@@ -30,7 +30,7 @@ and the drivers that let it drive a running app. All five install in Codex CLI t
 ## Claude Code
 
 ```text
-/plugin marketplace add iruirc/claude-marketplace
+/plugin marketplace add iruirc/spine-marketplace
 /plugin install spine-platform-swift   # for a Swift project — pulls spine-toolkit with it
 /plugin install spine-platform-kotlin  # for a Kotlin project — pulls spine-toolkit with it
 /plugin install spine-toolkit          # for any other stack, paired with a platform plugin of your own
@@ -43,16 +43,16 @@ Add this repository as a Git-backed marketplace, then install the orchestrator, 
 optionally, a driver:
 
 ```bash
-codex plugin marketplace add iruirc/claude-marketplace
-codex plugin add spine-toolkit@iruirc
-codex plugin add spine-platform-swift@iruirc     # or spine-platform-kotlin@iruirc
-codex plugin add spine-driver-mobile@iruirc      # optional
+codex plugin marketplace add iruirc/spine-marketplace
+codex plugin add spine-toolkit@spine
+codex plugin add spine-platform-swift@spine     # or spine-platform-kotlin@spine
+codex plugin add spine-driver-mobile@spine      # optional
 ```
 
 Refresh the marketplace and its installed plugins with:
 
 ```bash
-codex plugin marketplace upgrade iruirc
+codex plugin marketplace upgrade spine
 ```
 
 Start a new Codex session after installation or upgrade, then run `$spine-toolkit:setup` in the
